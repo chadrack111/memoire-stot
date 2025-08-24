@@ -125,3 +125,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'      
+
+LOGIN_REDIRECT_URL = 'elearning:home'    
+AUTH_USER_MODEL = 'elearning.CustomUser'
+LOGOUT_REDIRECT_URL = 'elearning:home'
+
