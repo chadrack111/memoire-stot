@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+{% comment %} header {% endcomment %}
+{% include "components/header.html" %}
+{% comment %} main {% endcomment %}
+
+  <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-5 fw-bold text-dark mb-3">Catalogue des cours</h1>
+                    <p class="lead text-muted">Découvrez notre sélection de cours pour tous les niveaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Programmation">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Introduction à la Programmation</h5>
+                            <p class="card-text text-muted flex-grow-1">Apprenez les bases de la programmation avec Python. Un cours parfait pour débuter dans le développement.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>12 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Débutant
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Design Web">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Design Web Moderne</h5>
+                            <p class="card-text text-muted flex-grow-1">Maîtrisez les principes du design web avec HTML5, CSS3 et les dernières tendances UX/UI.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>8 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Intermédiaire
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Data Science">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Data Science avec Python</h5>
+                            <p class="card-text text-muted flex-grow-1">Explorez le monde de la data science : analyse de données, machine learning et visualisation.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>15 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Avancé
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Développement Mobile">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Développement Mobile</h5>
+                            <p class="card-text text-muted flex-grow-1">Créez vos premières applications mobiles avec React Native et découvrez le développement cross-platform.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>10 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Intermédiaire
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Cybersécurité">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Cybersécurité Fondamentale</h5>
+                            <p class="card-text text-muted flex-grow-1">Apprenez à protéger les systèmes informatiques et découvrez les enjeux de la sécurité numérique.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>6 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Débutant
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/placeholder.svg?height=200&width=400" class="card-img-top" alt="Cours de Marketing Digital">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Marketing Digital</h5>
+                            <p class="card-text text-muted flex-grow-1">Maîtrisez les stratégies du marketing en ligne : SEO, réseaux sociaux, publicité digitale.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>9 heures
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-people me-1"></i>Débutant
+                                </small>
+                            </div>
+                            <a href="cours.html" class="btn btn-primary mt-3">
+                                <i class="bi bi-play-circle me-2"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% comment %} footer {% endcomment %}
+{% include "components/footer.html" %}
+{% endblock body %}

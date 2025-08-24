@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+{% comment %} header {% endcomment %}
+{% include "components/header.html" %}
+{% comment %} main {% endcomment %}
+
+<!-- Course Header -->
+    <section class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb text-white-50">
+                            <li class="breadcrumb-item"><a href="catalogue.html" class="text-white-50">Catalogue</a></li>
+                            <li class="breadcrumb-item active text-white">Introduction à la Programmation</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-5 fw-bold mb-3">Introduction à la Programmation</h1>
+                    <p class="lead mb-4">Découvrez les fondamentaux de la programmation avec Python et créez vos premiers programmes.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="bi bi-clock me-1"></i>12 heures
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="bi bi-people me-1"></i>Débutant
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="bi bi-star-fill me-1"></i>4.8/5
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="/placeholder.svg?height=300&width=400" class="img-fluid rounded shadow" alt="Cours de Programmation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Description -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-3">Description du cours</h3>
+                            <p class="text-muted mb-3">
+                                Ce cours d'introduction à la programmation vous permettra d'acquérir les bases essentielles du développement logiciel. 
+                                Vous apprendrez à penser comme un programmeur et à résoudre des problèmes de manière algorithmique.
+                            </p>
+                            <p class="text-muted mb-3">
+                                À travers des exercices pratiques et des projets concrets, vous découvrirez les concepts fondamentaux : 
+                                variables, conditions, boucles, fonctions et structures de données. Le langage Python, reconnu pour sa simplicité 
+                                et sa polyvalence, sera votre compagnon d'apprentissage.
+                            </p>
+                            <h5 class="fw-bold mb-3">Ce que vous apprendrez :</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Les bases de la syntaxe Python</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>La logique de programmation et les algorithmes</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>La manipulation des données et structures</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Le développement de petits projets pratiques</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Les bonnes pratiques de développement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lessons -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Contenu du cours</h3>
+                            
+                            <!-- Lesson 1 -->
+                            <div class="lesson-item border-bottom pb-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-play-circle text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">1. Introduction et installation de Python</h6>
+                                        <p class="text-muted mb-0 small">Découverte de Python et configuration de l'environnement de développement</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">45 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 2 -->
+                            <div class="lesson-item border-bottom pb-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-file-earmark-pdf text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">2. Variables et types de données</h6>
+                                        <p class="text-muted mb-0 small">Comprendre les variables, nombres, chaînes de caractères et booléens</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">60 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 3 -->
+                            <div class="lesson-item border-bottom pb-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-play-circle text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">3. Structures conditionnelles</h6>
+                                        <p class="text-muted mb-0 small">Apprendre à utiliser if, elif et else pour contrôler le flux du programme</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">50 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 4 -->
+                            <div class="lesson-item border-bottom pb-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-play-circle text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">4. Boucles et itérations</h6>
+                                        <p class="text-muted mb-0 small">Maîtriser les boucles for et while pour répéter des actions</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">55 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 5 -->
+                            <div class="lesson-item border-bottom pb-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-file-earmark-pdf text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">5. Fonctions et modularité</h6>
+                                        <p class="text-muted mb-0 small">Créer des fonctions réutilisables et organiser son code</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">70 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Lesson 6 -->
+                            <div class="lesson-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="lesson-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-play-circle text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fw-bold mb-1">6. Projet final : Calculatrice interactive</h6>
+                                        <p class="text-muted mb-0 small">Mettre en pratique tous les concepts appris dans un projet concret</p>
+                                    </div>
+                                    <span class="badge bg-light text-dark">90 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm sticky-top" style="top: 2rem;">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Actions</h5>
+                            
+                            <!-- Video Player -->
+                            <div class="mb-4">
+                                <video class="w-100 rounded" controls poster="/placeholder.svg?height=200&width=350">
+                                    <source src="#" type="video/mp4">
+                                    Votre navigateur ne supporte pas la lecture vidéo.
+                                </video>
+                            </div>
+
+                            <div class="d-grid gap-2 mb-4">
+                                <a href="#" class="btn btn-success btn-lg">
+                                    <i class="bi bi-download me-2"></i>Télécharger ressources
+                                </a>
+                                <a href="catalogue.html" class="btn btn-outline-primary">
+                                    <i class="bi bi-arrow-left me-2"></i>Retour au catalogue
+                                </a>
+                            </div>
+
+                            <hr>
+
+                            <h6 class="fw-bold mb-3">Informations</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-person text-primary me-2"></i>
+                                    <strong>Instructeur :</strong> Dr. Marie Dubois
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-calendar text-primary me-2"></i>
+                                    <strong>Dernière mise à jour :</strong> Décembre 2024
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-translate text-primary me-2"></i>
+                                    <strong>Langue :</strong> Français
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-award text-primary me-2"></i>
+                                    <strong>Certificat :</strong> Inclus
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% comment %} footer {% endcomment %}
+{% include "components/footer.html" %}
+{% endblock body %}

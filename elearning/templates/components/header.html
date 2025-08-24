@@ -1,0 +1,28 @@
+{% load static %}
+<!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-mortarboard-fill me-2"></i>StoterLearning
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'elearning:home' %}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'elearning:course_list' %}">Liste des cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'elearning:login' %}">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary ms-2 px-3" href="{% url "elearning:register" %}">Inscription</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
